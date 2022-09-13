@@ -107,49 +107,49 @@ formCheck25.addEventListener('click', ()=>{
     formCheck21.classList.remove('formCheckActive');
 });
 
-const formCheck31 = document.querySelector('#quest3 .form-check:nth-child(1)');
-const formCheck32 = document.querySelector('#quest3 .form-check:nth-child(2)');
-formCheck31.addEventListener('click', ()=>{
-    formCheck31.classList.add('formCheckActive');
-    formCheck32.classList.remove('formCheckActive');
-});
-formCheck32.addEventListener('click', ()=>{
-    formCheck32.classList.add('formCheckActive');
-    formCheck31.classList.remove('formCheckActive');
-});
+// const formCheck31 = document.querySelector('#quest3 .form-check:nth-child(1)');
+// const formCheck32 = document.querySelector('#quest3 .form-check:nth-child(2)');
+// formCheck31.addEventListener('click', ()=>{
+//     formCheck31.classList.add('formCheckActive');
+//     formCheck32.classList.remove('formCheckActive');
+// });
+// formCheck32.addEventListener('click', ()=>{
+//     formCheck32.classList.add('formCheckActive');
+//     formCheck31.classList.remove('formCheckActive');
+// });
 
-const formCheck41 = document.querySelector('#quest4 .form-check:nth-child(1)');
-const formCheck42 = document.querySelector('#quest4 .form-check:nth-child(2)');
-formCheck41.addEventListener('click', ()=>{
-    formCheck41.classList.add('formCheckActive');
-    formCheck42.classList.remove('formCheckActive');
-});
-formCheck42.addEventListener('click', ()=>{
-    formCheck42.classList.add('formCheckActive');
-    formCheck41.classList.remove('formCheckActive');
-});
+// const formCheck41 = document.querySelector('#quest4 .form-check:nth-child(1)');
+// const formCheck42 = document.querySelector('#quest4 .form-check:nth-child(2)');
+// formCheck41.addEventListener('click', ()=>{
+//     formCheck41.classList.add('formCheckActive');
+//     formCheck42.classList.remove('formCheckActive');
+// });
+// formCheck42.addEventListener('click', ()=>{
+//     formCheck42.classList.add('formCheckActive');
+//     formCheck41.classList.remove('formCheckActive');
+// });
 
-const formCheck51 = document.querySelector('#quest5 .form-check:nth-child(1)');
-const formCheck52 = document.querySelector('#quest5 .form-check:nth-child(2)');
-formCheck51.addEventListener('click', ()=>{
-    formCheck51.classList.add('formCheckActive');
-    formCheck52.classList.remove('formCheckActive');
-});
-formCheck52.addEventListener('click', ()=>{
-    formCheck52.classList.add('formCheckActive');
-    formCheck51.classList.remove('formCheckActive');
-});
+// const formCheck51 = document.querySelector('#quest5 .form-check:nth-child(1)');
+// const formCheck52 = document.querySelector('#quest5 .form-check:nth-child(2)');
+// formCheck51.addEventListener('click', ()=>{
+//     formCheck51.classList.add('formCheckActive');
+//     formCheck52.classList.remove('formCheckActive');
+// });
+// formCheck52.addEventListener('click', ()=>{
+//     formCheck52.classList.add('formCheckActive');
+//     formCheck51.classList.remove('formCheckActive');
+// });
 
-const formCheck61 = document.querySelector('#quest6 .form-check:nth-child(1)');
-const formCheck62 = document.querySelector('#quest6 .form-check:nth-child(2)');
-formCheck61.addEventListener('click', ()=>{
-    formCheck61.classList.add('formCheckActive');
-    formCheck62.classList.remove('formCheckActive');
-});
-formCheck62.addEventListener('click', ()=>{
-    formCheck62.classList.add('formCheckActive');
-    formCheck61.classList.remove('formCheckActive');
-});
+// const formCheck61 = document.querySelector('#quest6 .form-check:nth-child(1)');
+// const formCheck62 = document.querySelector('#quest6 .form-check:nth-child(2)');
+// formCheck61.addEventListener('click', ()=>{
+//     formCheck61.classList.add('formCheckActive');
+//     formCheck62.classList.remove('formCheckActive');
+// });
+// formCheck62.addEventListener('click', ()=>{
+//     formCheck62.classList.add('formCheckActive');
+//     formCheck61.classList.remove('formCheckActive');
+// });
 
 next1.addEventListener('click', function(e){
     tinggi = document.querySelector('#tinggi').value;
@@ -203,37 +203,42 @@ next2.addEventListener('click', function(e){
     localStorage.setItem('kalori', tdee);
 
     document.querySelector('#quest2').style.display = 'none';
-    document.querySelector('#quest3').style.display = 'block';
-        
-    e.preventDefault();
-});
-
-next3.addEventListener('click', function(e){
-    document.querySelector('#quest3').style.display = 'none';
-    document.querySelector('#quest4').style.display = 'block';
-    
-    e.preventDefault();
-});
-next4.addEventListener('click', function(e){
-    document.querySelector('#quest4').style.display = 'none';
-    document.querySelector('#quest5').style.display = 'block';
-    
-    e.preventDefault();
-});
-next5.addEventListener('click', function(e){
-    document.querySelector('#quest5').style.display = 'none';
-    document.querySelector('#quest6').style.display = 'block';
-    
-    e.preventDefault();
-});
-next6.addEventListener('click', function(e){
-    document.querySelector('#quest6').style.display = 'none';
     document.querySelector('#quest7').style.display = 'block';
     setTimeout(
         function(){
             window.location.href = "./monitor.html";
         }, 1500
     );
-    
+        
     e.preventDefault();
 });
+
+// next3.addEventListener('click', function(e){
+//     document.querySelector('#quest3').style.display = 'none';
+//     document.querySelector('#quest4').style.display = 'block';
+    
+//     e.preventDefault();
+// });
+// next4.addEventListener('click', function(e){
+//     document.querySelector('#quest4').style.display = 'none';
+//     document.querySelector('#quest5').style.display = 'block';
+    
+//     e.preventDefault();
+// });
+// next5.addEventListener('click', function(e){
+//     document.querySelector('#quest5').style.display = 'none';
+//     document.querySelector('#quest6').style.display = 'block';
+    
+//     e.preventDefault();
+// });
+// next6.addEventListener('click', function(e){
+//     document.querySelector('#quest6').style.display = 'none';
+//     document.querySelector('#quest7').style.display = 'block';
+//     setTimeout(
+//         function(){
+//             window.location.href = "./monitor.html";
+//         }, 1500
+//     );
+    
+//     e.preventDefault();
+// });
